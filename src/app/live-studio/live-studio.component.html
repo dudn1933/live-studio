@@ -1,0 +1,15 @@
+<div class="aside">
+    <div class="logo"></div>
+    <div class="time">{{ dateTime | async | date:'MM/dd/y, HH:mm:ss'}}</div>
+</div>
+<div class="live-studio-box">
+    <div class="space-box">
+        <div class="space" *ngFor="let space of spaceNumber">
+            <app-space [spaceIndex]="space+1"></app-space>
+        </div>
+    </div>
+    <div class="patient-box">
+        <app-patient-location></app-patient-location>
+        <app-arrhythmia></app-arrhythmia>
+    </div>
+</div>

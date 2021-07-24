@@ -1,0 +1,36 @@
+#ecgBox {
+    position:relative;
+    width: 100%;
+    height:50%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chartBox {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.ecg-title {
+    position:absolute;
+    width:100%;
+    color:grey;
+    top:0;
+    padding: 0 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ecg-rate {
+    color:white;
+    font-size: 2rem;
+    font-weight: bold;
+}

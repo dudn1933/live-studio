@@ -1,0 +1,21 @@
+.view-info-box {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 1px solid grey;
+}
+
+app-trend-data-number {
+  width: 65%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+app-current-status {
+  width: 35%;
+  height: 100%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,18 @@
+<div class="arrhythmia-list">
+    <div class="arrhythmia-title">
+        <div class="arrhythmia-log">
+            <div>space</div>
+            <div>#</div>
+        </div>
+        <div class="arrhythmia-detected">Arrhythmia Detected</div>
+        <div class="arrhythmia-timestamp">Time</div>
+    </div>
+    <div class="arrhythmia-items" *ngFor="let arrhythmia of arrhythmiaList" >
+        <div class="arrhythmia-item">
+            <div class="">A-{{spaceIndex}}</div>
+            <div>{{arrhythmia.index}}</div>
+        </div>
+        <div class="arrhythmia-type" [ngStyle]="{'color': getColor(getAnnotation(arrhythmia.type))}">{{getAnnotation(arrhythmia.type)}}</div>
+        <div class="arrhythmia-time">{{arrhythmia.timeStamp}}</div>
+    </div>
+</div>

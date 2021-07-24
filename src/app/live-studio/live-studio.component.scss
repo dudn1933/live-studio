@@ -1,0 +1,103 @@
+.aside {
+  width: 100%;
+  height: 3vh;
+  position: relative;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  .logo {
+    background: url("../../assets/image/Hicardi.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: -2px;
+    width: 10%;
+    height: 100%;
+  }
+
+  .time {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.live-studio-box {
+  width: 100%;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: gray;
+  box-sizing: border-box;
+
+  .space-box {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    .space {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      &:nth-child(2) {
+        // index = 1;
+        box-sizing: border-box;
+        grid-row-start: 2;
+        grid-column-start: 1;
+      }
+      &:nth-child(3) {
+        // index = 2;
+        box-sizing: border-box;
+        grid-row-start: 3;
+        grid-column-start: 1;
+      }
+      &:nth-child(4) {
+        // index = 3;
+        box-sizing: border-box;
+        grid-row-start: 4;
+        grid-column-start: 1;
+      }
+    }
+  }
+
+  .patient-box {
+    width: 20%;
+    height: 100%;
+
+    padding-left: 5px;
+
+    box-sizing: border-box;
+  }
+}
+
+app-space {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+app-patient-location {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+app-arrhythmia {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}

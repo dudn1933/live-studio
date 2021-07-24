@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'live-studio'`, () => {
+  it(`should have as title 'LiveStudioProject'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('live-studio');
+    expect(app.title).toEqual('LiveStudioProject');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('live-studio app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('LiveStudioProject app is running!');
   });
 });
