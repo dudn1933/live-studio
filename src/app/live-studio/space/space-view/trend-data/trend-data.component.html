@@ -1,13 +1,17 @@
 <div class="trend-data-box">
-    <div id="heart-rate" class="heart_{{spaceIndex}}">
-        <div class="title"><span>Heart Rate</span><div></div></div>
+    <div id="heart-rate">
+        <div class="title"><span>Heart Rate</span><div>{{heartRateBPM}}</div></div>
+        <div id="heart_data" class="heart_{{spaceIndex}}"></div>
+        <div id="heart_axis" class="heart_axis{{spaceIndex}}"></div>
     </div>
-    <div class="trend-bottom" class="resp_{{spaceIndex}}">
+    <div class="trend-bottom">
         <div id="respiration-rate">
-            zzz
+            <div class="title"><span>Respiration Rate</span><div></div></div>
+            <div id="respiration-data" class="respiration_{{spaceIndex}}"></div>
+            <div id="respiration_axis" class="respiration_axis{{spaceIndex}}"></div>
         </div>
-        <div id="temperature-rate" class="temp_{{spaceIndex}}">
-            zzz
+        <div id="temperature-rate">
+            <div class="temp_{{spaceIndex}}"></div>
         </div>
     </div>
 </div>
